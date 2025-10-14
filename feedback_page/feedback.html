@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback page</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script src="https://kit.fontawesome.com/3a02fb5cff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="feedback.js"></script>
+    <div class="wrapper">
+        <!-- Header with Navigation Bar -->
+        <header>
+            <img src="Logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="../Home-Page/Home.html" >Home</a></li>
+                    <li><a href="../volunteer-page/nav.html">Volunteer</a></li>
+                    <li><a href="../User-Profile/profile.html">User Profile</a></li>
+                    <li><a href="../feedback_page/feedback.html" class="active">Feedback</a></li>
+                    <li><a href="../Sitemap/sitemap.html">Sitemap</a></li>
+                    <li><a href="../team_page/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main Content Area -->
+        <main>
+        <form id="feedbackform" class="form">
+            <img id="feedback" src="feedback.png" alt="feedback">
+            <strong>Personal Details:</strong><br>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Telephone Number" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="address" placeholder="Your Address">
+            <br><br>
+            <lable for="gender"><b>Gender:</b></lable>
+                <select id="gender" name="Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+            <lable for="dob"><b>Date Of Birth:</b> </lable>
+            <input type="date" id="dob" name="user_dob">
+            <br>
+            <lable for="provinces"><b>Select your Province:</b></lable>
+            <input list="provinces" id="prov" name="province">
+            <datalist id="provinces">
+                <option value="Southern">
+                <option value="Western">
+                <option value="Sabaragamuwa">
+                <option value="Uva">
+                <option value="Central">
+                <option value="Eastern">
+                <option value="North Western">
+                <option value="North Central">
+                <option value="Northern">
+            </datalist>
+            <br><br>
+            <h3 id="rate">Rate Our Service 👍👎</h3>
+            <br>
+            <div class="firttime">
+                <lable for="question"><b>Was this your first time visiting this page?</b></lable>
+                <select id="time" name="times">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <br><br>
+            
+            <br><label for="experience"><b>How was your experience?</b></label>
+            <select id="experience" name="experience">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="Poor">Poor</option>
+            </select>
+            <div class="stars">
+                <span class="star" onclick="rate(1)">&#9733;</span>  <!--represents the stars using the unicode character--> 
+                <span class="star" onclick="rate(2)">&#9733;</span>
+                <span class="star" onclick="rate(3)">&#9733;</span>
+                <span class="star" onclick="rate(4)">&#9733;</span>
+                <span class="star" onclick="rate(5)">&#9733;</span>
+            </div>
+            
+            <p><strong>If you have attach any files photos or anything attach here:</strong></p>   
+            <input id="infile" type="file" id="file" name="file"><br>
+            <input id="feedbacktxt" placeholder="Your Feedback" required>
+            <br> <br>       
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>
+                    Promoting good health & well-being by providing valuable resources
+                    and information.
+                    </p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">Editors Page</a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="../editorpg/Page Editor_ST1.html">Student 1</a></li>
+                                  <li><a href="../Page-Editor/PageEditor_student2.html">Student 2</a></li>
+                                  <li><a href="../editor_page/pageEditor_ST3.html">Student 3</a></li>
+                                  <li><a href="../Page_editor/pageEditor_ST4.html">Student 4</a></li>
+                                </ul>
+                              </li>
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">Validation Page</a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="../validationpg/validation_ST1.html">Student 1</a></li>
+                                  <li><a href="../Validations-Page/validation_student2.html" >Student 2</a></li>
+                                  <li><a href="../validation_page/validation_ST3.html">Student 3</a></li>
+                                  <li><a href="../Validation/validation_ST4.html">Student 4</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="footer-section contact">
+                            <h2>Contact</h2>
+                            <p>Email: support@healthwellbeing.com</p>
+                            <p>Phone: +1 (123) 456-7890</p>
+                          </div>
+                          <div class="footer-section social">
+                            <h2>Follow Us</h2>
+                            <a href="https://www.facebook.com/profile.php?id=61557171063807" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/SIGallage" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/nevithh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/sasanka-gallage-9861532bb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                    </div>
+                    <div class="footer-bottom">
+                      <p>
+                        &copy; <span id="year"></span> Good Health & Well-Being. All rights reserved.
+                      </p>
+                    </div>
+            </div>
+        </footer>
+</div>
+<script src="template.js"></script>        
+</body>
+</html>
