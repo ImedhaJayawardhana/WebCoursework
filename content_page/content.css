@@ -1,0 +1,446 @@
+  /* Global CSS File */
+  
+  /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
+  
+body {
+background-color: hsla(147, 100%, 86%, 0.777);
+background-image: url("backcontent.png");
+background-size:content;
+color: black;
+line-height: 1.6;
+}
+body ::before {
+  :before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('backcontent.png') ;
+      background-size:content;
+      /*filter: blur(5000px);*/ 
+      z-index: -1;
+  }
+}
+  
+.wrapper {
+width: 80%;
+margin: 0 auto;
+background: transparent;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Header and Navigation */
+header {
+background: #006d5b;
+padding-top:-500px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+  
+nav ul {
+list-style: none;
+display: flex;
+margin-right: 20px;
+}
+  
+nav ul li {
+margin: 0 15px;
+}
+  
+nav ul li a {
+text-decoration: none;
+color: #fff;
+padding: 10px 15px;
+font-size: 1.2rem;
+transition: 0.3s;
+}
+  
+nav ul li a:hover,
+nav ul li a.active {
+background: #4caf50;
+border-radius: 8px;
+}
+  /* Main Content */
+main {
+  padding: 120px 20px 40px;
+}
+footer {
+  background: #006d5b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+/* Footer Styles */
+.footer {
+  background: #006D5B;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.7rem;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  color: #4caf50;
+  padding-top: 0%;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #4caf50;
+}
+
+.footer-section.social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-section.social a:hover {
+  color: #4caf50;
+}
+
+.footer-bottom {
+  background: #111;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+}
+.dropdown-menu.active {
+  display: block;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+#goToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#goToTopBtn:hover {
+  background-color: #555;
+}
+
+header img {
+    width: 100px; 
+    height: auto; 
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color:#2c634a;
+  color: white;
+  margin-top: -150px;
+  float:right;
+}
+.nav-links{
+  list-style: none;
+  display:flex;
+  gap:20px;
+  align-items: right;
+}
+.nav-links li a{
+  text-decoration: none;
+  color:white;
+  font-size: 16px;
+}
+.pagestr{
+  position:relative;
+  background: url('mythsp.jpg') no-repeat center center/cover;
+  height:60vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:white;
+  margin-top: -50px;
+  
+}
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.pagestr-content{
+  position:relative;
+  max-width: 600px;
+}
+.pagestr h1{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.pagestr p{
+  font-size:18px;
+  margin-bottom:20px;
+}
+.cta-button{
+  background-color:#ff4444;
+  color:white;
+  padding:12px 24px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size: 16px;
+}
+.cta-button:hover{
+  background-color: #cc0000;
+}
+.content-section h2{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.heading1{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin:20px auto;
+}
+.heading1 h1{
+  font-size: 50px;
+  color:#000;
+  margin-bottom:25px;
+  position:relative;
+}
+.heading1 h1::after{
+  content: "";
+  position:absolute;
+  width:100%;
+  height:4px;
+  display:block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+.heading1 p{
+  font-size: 18px;
+  color:#000000;
+  margin-bottom:35px;
+}
+.headingabt{
+  width:90%;
+  margin:0 auto;
+  padding:10px 20px;
+}
+.about{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.about-img{
+  flex:1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.about-img img{
+  max-width: 100%;
+  height: auto;
+  display:block;
+  transition:0.5s ease;
+}
+.about-content{
+  flex:1;
+}
+
+.about-content h2{
+  font-size: 23px;
+  margin-bottom:15px;
+  color:#9c0909;
+  padding-right: 100px;
+}
+
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  color:#000000;
+}
+.about-contentmore{
+  font-size: 18px;
+  line-height: 1.5;
+  color:#000000;
+}
+.about-contentmore h2{
+  font-size: 23px;
+  margin-bottom:15px;
+  color:#9c0909;
+}
+
+.form{
+  background: #e7e7e7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 50px #006d5b;
+  border-color: #000;
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#headingmyths, #headingimpact, #introheading{
+    color:#006D5B;
+    text-align: center;
+    font-family: Arial;
+    padding-bottom: 25px;
+    text-shadow: 5px 5px 8px rgb(138, 148, 148);
+    font-size: 50px;
+    animation: move 2s infinite;
+}
+#mythsimage{
+    width: 150px;
+    height: auto;
+    inline-size: none;
+    
+}
+h3{
+    color:rgb(146, 4, 4)
+}
+#drinking{
+    width:180px;
+    float: right;
+}
+#excercise{
+  width:280px;
+  float:left;
+  padding-right: 10px;
+}
+#myths2{
+    width:250px;
+    float:right;
+}
+#myths10{
+    width:200px;
+    float:right;
+    
+}
+#facts{
+    float:right;
+}
+
+#impact ul li{
+  color:rgb(146, 4, 4);
+  padding-bottom: 5px;
+  padding-top: 3px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+#impact ul p{
+  padding-bottom: 10px;
+}
+#impctmyth, #finamyth{
+  width:250px;
+  float: right;
+}
+#Impact1, #Impact2, #Impact3, #Impact4{
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #dbf4e8;
+  border-radius: 10px;
+}
+#myths12, #myths34, #myths56 {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #d1ede6;
+  border-radius: 10px;
+}
+#edumyth {
+  width:200px;
+  float:left;
+}
+#socialmyth{
+  width:160px;
+  float:left;
+}
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+      
+.top a {
+  padding: 10px 20px; /* Adds padding for button-like feel */
+  background-color: #00b345; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 20px; /* Rounds the corners */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+  background-color: #83ac93; /* Darker shade on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
