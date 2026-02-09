@@ -13,7 +13,7 @@ body {
     background: url('pic6.jpg') ;
     background-size: cover;
     color: black;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     line-height: 1.6;
 }
     
